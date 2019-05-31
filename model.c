@@ -4,6 +4,7 @@ struct node
 	int nodeno;
 	int weight;
 	int visited;
+	int visted2;
 	int traverser;
 	int data;
 	struct node *next;
@@ -31,7 +32,7 @@ int findlength(struct node *a, struct node *b)
 	if(a)
 		return length;
 	else 
-		return 0;
+		return count+1;
 }
 
 
